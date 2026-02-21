@@ -4,6 +4,8 @@ A retro-themed dashboard built with **React**, **Vite**, and **[8bitcn/ui](https
 
 ![8-Bit Adventure Dashboard](https://api.dicebear.com/9.x/pixel-art/svg?seed=8bitui&size=64)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 ## ✨ Tech Stack
 
 | Tool | Purpose |
@@ -84,4 +86,4 @@ The included dashboard (`App.tsx`) demonstrates:
 
 ## 📜 License
 
-MIT
+This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
