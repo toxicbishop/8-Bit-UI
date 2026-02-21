@@ -2,7 +2,7 @@ import { type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-import { Badge as ShadcnBadge } from "@/components/ui/badge";
+import { Badge as ShadcnBadge } from "@/components/ui/base/badge";
 import { badgeVariants } from "@/components/ui/8bit/badge-variants";
 
 export interface BitBadgeProps

@@ -2,7 +2,7 @@ import { type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-import { Button as ShadcnButton } from "@/components/ui/button";
+import { Button as ShadcnButton } from "@/components/ui/base/button";
 import { buttonVariants } from "@/components/ui/8bit/button-variants";
 
 import "@/components/ui/8bit/styles/retro.css";

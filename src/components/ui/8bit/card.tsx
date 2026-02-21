@@ -10,7 +10,7 @@ import {
   CardFooter as ShadcnCardFooter,
   CardHeader as ShadcnCardHeader,
   CardTitle as ShadcnCardTitle,
-} from "@/components/ui/card";
+} from "@/components/ui/base/card";
 
 import "@/components/ui/8bit/styles/retro.css";
 

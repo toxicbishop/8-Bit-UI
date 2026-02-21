@@ -1,73 +1,87 @@
-# 8-bit-UI
+# 8-Bit UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A retro-themed dashboard built with **React**, **Vite**, and **[8bitcn/ui](https://8bitcn.com)** — a pixel-art component library on top of shadcn/ui and Tailwind CSS.
 
-Currently, two official plugins are available:
+![8-Bit Adventure Dashboard](https://api.dicebear.com/9.x/pixel-art/svg?seed=8bitui&size=64)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Tech Stack
 
-## React Compiler
+| Tool | Purpose |
+|---|---|
+| [React 19](https://react.dev) | UI framework |
+| [Vite 7](https://vite.dev) | Build tool & dev server |
+| [8bitcn/ui](https://8bitcn.com) | Pixel-art 8-bit components |
+| [shadcn/ui](https://ui.shadcn.com) | Base component primitives |
+| [Tailwind CSS 3](https://tailwindcss.com) | Utility-first styling |
+| [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) | Retro pixel font |
+| TypeScript | Type safety |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+```bash
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Start dev server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173) to view the app.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── main.tsx                    # App entry point
+├── index.css                   # Tailwind directives + shadcn CSS variables
+├── App.tsx                     # Main dashboard page
+│
+├── lib/
+│   └── utils.ts                # cn() utility (clsx + tailwind-merge)
+│
+├── types/
+│   └── index.ts                # Shared TypeScript types
+│
+└── components/
+    └── ui/
+        ├── base/               # shadcn base primitives
+        │   ├── badge.tsx       + badge-variants.ts
+        │   ├── button.tsx      + button-variants.ts
+        │   ├── card.tsx
+        │   ├── input.tsx
+        │   └── label.tsx
+        │
+        └── 8bit/               # 8bitcn/ui pixel-art components
+            ├── badge.tsx       + badge-variants.ts
+            ├── button.tsx      + button-variants.ts
+            ├── card.tsx        + card-variants.ts
+            ├── input.tsx       + input-variants.ts
+            └── styles/
+                └── retro.css   # Press Start 2P font import
+```
+
+## 🧩 Adding New 8-bit Components
+
+Use the shadcn CLI with the 8bitcn registry:
+
+```bash
+# Add a specific component (e.g. progress bar)
+npx shadcn@latest add https://8bitcn.com/r/progress.json
+```
+
+Browse all available components at [8bitcn.com/docs/components](https://8bitcn.com/docs/components).
+
+## 🎨 Demo Features
+
+The included dashboard (`App.tsx`) demonstrates:
+
+- **Character Profile Card** — avatar, health bar, experience bar
+- **HEAL button** — increases health by 10 each click
+- **LEVEL UP button** — increments the level badge
+- **Name input** — updates the DiceBear pixel avatar in real-time
+- **Navigation bar** with animated "NEW DLC" badge
+- **Limited Event** call-to-action panel
+
+## 📜 License
+
+MIT
