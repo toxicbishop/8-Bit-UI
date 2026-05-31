@@ -67,7 +67,7 @@ function App() {
             <CardHeader className="text-center">
               <div className="mx-auto w-32 h-32 bg-primary/20 p-2 mb-4 relative">
                 <img
-                  src={`https://api.dicebear.com/9.x/pixel-art/svg?seed=${name}`}
+                  src={`https://api.dicebear.com/9.x/pixel-art/svg?seed=${encodeURIComponent(name)}`}
                   alt="Avatar"
                   className="w-full h-full pixelated"
                 />
