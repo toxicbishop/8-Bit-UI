@@ -22,10 +22,10 @@ A retro-themed dashboard built with **React**, **Vite**, and **[8bitcn/ui](https
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Start dev server
-npm run dev
+pnpm dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) to view the app.
