@@ -6,7 +6,7 @@ A retro-themed dashboard built with **React**, **Vite**, and **[8bitcn/ui](https
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE)
 
-## ✨ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -18,7 +18,7 @@ A retro-themed dashboard built with **React**, **Vite**, and **[8bitcn/ui](https
 | [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) | Retro pixel font |
 | TypeScript | Type safety |
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Install dependencies
@@ -30,7 +30,7 @@ pnpm dev
 
 Open [http://localhost:5173](http://localhost:5173) to view the app.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -62,7 +62,7 @@ src/
                 └── retro.css   # Press Start 2P font import
 ```
 
-## 🧩 Adding New 8-bit Components
+## Adding New 8-bit Components
 
 Use the shadcn CLI with the 8bitcn registry:
 
@@ -73,7 +73,7 @@ npx shadcn@latest add https://8bitcn.com/r/progress.json
 
 Browse all available components at [8bitcn.com/docs/components](https://8bitcn.com/docs/components).
 
-## 🎨 Demo Features
+## Demo Features
 
 The included dashboard (`App.tsx`) demonstrates:
 
@@ -84,6 +84,6 @@ The included dashboard (`App.tsx`) demonstrates:
 - **Navigation bar** with animated "NEW DLC" badge
 - **Limited Event** call-to-action panel
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT LICENCE** — see the [LICENSE](./LICENSE) file for details.
