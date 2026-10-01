@@ -29,7 +29,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
     "autoprefixer": "^10.5.0",
-    "brace-expansion": ">=5.0.9",
+    "brace-expansion": ">=5.0.12",
     "esbuild": "^0.28.1",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.1.1",
@@ -44,13 +44,15 @@
   "overrides": {
     "esbuild": "^0.28.1",
     "baseline-browser-mapping": ">=2.11.0",
-    "brace-expansion": ">=5.0.9",
-    "browserslist": ">=4.28.3"
+    "brace-expansion": ">=5.0.12",
+    "browserslist": ">=4.28.3",
+    "js-yaml": ">=5.4.1"
   },
   "resolutions": {
     "esbuild": "^0.28.1",
     "baseline-browser-mapping": ">=2.11.0",
-    "brace-expansion": ">=5.0.9",
-    "browserslist": ">=4.28.3"
+    "brace-expansion": ">=5.0.12",
+    "browserslist": ">=4.28.3",
+    "js-yaml": ">=5.4.1"
   }
 }
