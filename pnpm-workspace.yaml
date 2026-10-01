@@ -2,7 +2,7 @@ allowBuilds:
   esbuild: true
 overrides:
   baseline-browser-mapping: ">=2.11.0"
-  brace-expansion: ">=5.0.7"
+  brace-expansion: ">=5.0.12"
   browserslist: ">=4.28.3"
   js-yaml: ">=5.4.1"
   postcss: ">=8.5.18"

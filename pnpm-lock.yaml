@@ -6,7 +6,7 @@ settings:
 
 overrides:
   baseline-browser-mapping: '>=2.11.0'
-  brace-expansion: '>=5.0.7'
+  brace-expansion: '>=5.0.12'
   browserslist: '>=4.28.3'
   js-yaml: '>=5.4.1'
   postcss: '>=8.5.18'
@@ -62,8 +62,8 @@ importers:
         specifier: ^10.5.0
         version: 10.5.0(postcss@8.5.23)
       brace-expansion:
-        specifier: '>=5.0.7'
-        version: 5.0.9
+        specifier: '>=5.0.12'
+        version: 5.0.12
       esbuild:
         specifier: ^0.28.1
         version: 0.28.1
@@ -712,8 +712,8 @@ packages:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
 
-  brace-expansion@5.0.9:
-    resolution: {integrity: sha512-ScQ4IuvIEF1TMlP7Zt+vjJ//9zlPb2SDcxWxM3bk8s6t6GGdJ7KO1dCcTidOPJKePW30LE/2cT7wCyPho9/Wxg==}
+  brace-expansion@5.0.12:
+    resolution: {integrity: sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==}
     engines: {node: 20 || >=22}
 
   braces@3.0.3:
@@ -2046,7 +2046,7 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
-  brace-expansion@5.0.9:
+  brace-expansion@5.0.12:
     dependencies:
       balanced-match: 4.0.4
 
@@ -2454,11 +2454,11 @@ snapshots:
 
   minimatch@10.2.5:
     dependencies:
-      brace-expansion: 5.0.9
+      brace-expansion: 5.0.12
 
   minimatch@3.1.5:
     dependencies:
-      brace-expansion: 5.0.9
+      brace-expansion: 5.0.12
 
   ms@2.1.3: {}
 
